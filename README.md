@@ -14,3 +14,5 @@ Thus, I’ve chosen Azure Durable Serverless Functions provide elegant set of fe
 
   I ran out of personal time and did not add any unit tests for the Services, **deduct points for that if you must**.  
 But I did reviewed most places where error checking is needed in more then happy-path approach.
+
+As well I addressed many points of the assignment in the comments in the code, as I belive thats the best place for them to be.
