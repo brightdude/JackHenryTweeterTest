@@ -8,11 +8,12 @@ I chose to use Azure durable functions to host the solution as it provides a mul
 2.	No need to run as uncool console app,  as windows service would require installation that most of us forgot how to do. (it's installutil <yourexecutable>.exe )
 3.	To be relatively thread safe and memory resident for the real-time changing repository of tweets.
 
-Thus, I’ve chosen Azure Durable Serverless Functions provide elegant set of features without much complexity.  There is no hosting model choice needs to be specified, as Durable functions have stable state aware run time and VM destruction safe behind the scenes by Azure 
+Thus, I’ve chosen Azure Durable Serverless Functions provide elegant set of features without much complexity.  
+There is no hosting model choice needs to be specified, as Durable functions have stable state aware run time and VM destruction safe behind the scenes by Azure.
+To run locally a Azure Functions runtime needs to be installed instructions can be found here: https://azure.microsoft.com/en-us/services/functions/
 
-  I chose not to add "Guard.Against" libraries for null checking as its adds confusion, although they are standard in my coding practices. 
+I chose not to add "Guard.Against" libraries for null checking as its adds confusion, although they are standard in my coding practices. 
 
-  I ran out of personal time and did not add any unit tests for the Services, **deduct points for that if you must**.  
-But I did reviewed most places where error checking is needed in more then happy-path approach.
+I ran out of personal time and did not add any unit tests for the Services, **deduct points for that if you must**.  But I did reviewed most places where error checking is needed in more then happy-path approach.
 
 As well I addressed many points of the assignment in the comments in the code, as I belive thats the best place for them to be.
